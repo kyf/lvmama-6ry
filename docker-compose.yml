@@ -1,0 +1,12 @@
+version: '2'
+services:
+    lvmama:
+        image: h5time.cn:5000/lvmama:v1
+        container_name: lvmama1
+        ports:
+            - "2601:8089"
+        volumes:
+            - "/mnt/work_share/lvmama/config/config.js:/work/config/config.js"
+
+
+
